@@ -247,3 +247,60 @@ button {
         grid-template-columns: repeat(2, 360px);
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+    .hide {
+        display: none;
+    }
+
+    .conteiner {
+        max-width: 359px;
+    }
+
+    .section_1 {
+        height: 80vw;
+    }
+
+    .section_1_content {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .text_section_1 h1 {
+        font-size: 38px;
+        line-height: 46px;
+        white-space: nowrap
+    }
+
+    .text_section_1 p {
+        font-size: 20px;
+        line-height: 24px;
+        color: #222222;
+        white-space: nowrap
+    }
+
+    .grid_1 {
+        display: grid;
+        grid-template-columns: repeat(1, 343px);
+        gap: 2vw;
+        margin-bottom: 2vw;
+        text-align: center;
+        padding-top: 4vw;
+    }
+
+    .elem_2 {
+    max-width: 343px;
+    }
+
+    .grid_2 {
+        grid-template-columns: repeat(1, 359px);
+    }
+
+    button {
+        margin-top: 8vw;
+        margin-bottom: 15vw;
+        padding: 2vw 4vw;
+    }
+
+}
