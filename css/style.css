@@ -15,10 +15,11 @@ img {
 
 .navigation {
     display: flex;
-    gap:70vw;
+    gap:60vw;
     bottom: 97.44%;
-    padding-top: 15px;
-    padding-bottom: 22px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    justify-content: space-between;
 }
 
 .conteiner {
@@ -30,14 +31,13 @@ img {
     align-items: flex-start;
     justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 2vw;
 }
 
-.navigation__rightSide {display: flex;
-    align-items: flex-end;
-    justify-content: end;
+.navigation__rightSide {
+    display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2vw;
 }
 
 .section_1 {
@@ -46,11 +46,16 @@ img {
 
 .section_1_content {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
-.text_section_1 { gap:2vw;
+.section_1 img {
+    max-width: 40vw;
+}
+
+.text_section_1 { 
+    gap:2vw;
     display: flex;
     justify-content: space-between;
 }
@@ -64,6 +69,7 @@ img {
     font-size: 48px;
     line-height: 58px;
     color: #222222;
+    white-space: nowrap
 }
 
 .text_section_1 p {
@@ -75,15 +81,16 @@ img {
     font-size: 32px;
     line-height: 38px;
     color: #222222;
+    white-space: nowrap
 }
 
 .grid_1 {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 2vw;
+    margin-bottom: 2vw;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 4vw;
 }
 
 .elem_2 {
@@ -157,7 +164,7 @@ img {
 .grid_2 {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    gap: 30px;
+    gap: 2vw;
     text-align: left;
     margin-top: 4vw;
 }
@@ -173,7 +180,7 @@ h4 {
     font-size: 13px;
     line-height: 16px;
     color: #000000;
-    padding-top: 30px;
+    padding-top: 2vw;
     padding-left: 1vw;
 }
 
@@ -205,11 +212,38 @@ button {
     margin-bottom: 4vw;
     background: none;
     border: 1px solid #FF6A6A;
-    padding: 15px 30px;
+    padding: 1vw 2vw;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+}
+
+
+@media (min-width: 768px) and (max-width: 1140px){
+
+    .conteiner {
+        max-width: 736px;
+    }
+
+    .text_section_1 h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .text_section_1 p {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .grid_1 {
+        grid-template-columns: repeat(3, 232px);
+    }
+
+    .grid_2 {
+        grid-template-columns: repeat(2, 360px);
+    }
 }
